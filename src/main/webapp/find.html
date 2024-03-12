@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Card Number</title>
+    <style>
+        *
+        {
+            padding:0;
+            margin: 0;
+        }
+        body
+        {
+            background: rgb(184, 219, 9);
+            background-size: contain;
+        }
+
+        form
+        {
+            position: absolute;
+            width: 400px;
+            height: 250px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        form input
+        {
+            position: relative;
+            width: 100%;
+            display: block;
+            padding: 10px;
+            margin: 10px -12px;
+        }
+    </style>
+</head>
+<body>
+    <form action="find.jsp" method="post">
+        <input type="text" name="user" id="" placeholder="User Name">
+        <input type="text" name="number" id="" placeholder="Phone Number">
+        <input type="submit" value="Ok" style="width: 200px;">
+    </form>
+</body>
+</html>

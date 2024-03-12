@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Service Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/all.min.css">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 17.5px;
+}
+
+
+::-webkit-scrollbar
+{
+width:10px;
+}
+
+::-wegkit-scrollbar-track
+{
+background:black;
+}
+
+::-webkit-scrollbar-thumb
+{
+height: 50px;
+background: black;
+border-radius:30px;
+}
+
+span
+{
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  border-radius: 10px;
+  background-color:rgb(243, 237, 237);
+  transform: translate(0%,22px);
+}
+
+.top
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  width: 100%;
+  height: 70px;
+  top: -50px;
+  margin-top: 50px ;
+  background-color:rgb(34, 116, 240);  
+}
+
+.top h2
+{
+  font-size: 30px;
+  color: white;
+  position: relative;
+  left: 30px;
+}
+
+.bottom
+{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  top: -30px;  
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  
+    position: relative;
+    width: 300px;
+  height: 400px;
+  background: rgb(253, 253, 253);
+  padding: .4em;
+  border-radius: 6px;
+  border: 1px solid rgba(29, 26, 26, 0.2);
+}
+
+.card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 60%;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+
+<div class="topnav">
+  <h2><i class="head1">SVS</i> Hospital</h2>
+  <a href="homes.html"><i class="fa fa-home" style="font-size: 15px;"></i> Home</a>
+  <a href="login.html"><i class="fa-solid fa-user" style="font-size: 15px;"></i> Patient Login</a>
+  <a href="register.html"><i class="fa-solid fa-user-plus" style="font-size: 15px;"></i> Patient Register</a>
+  <a href="services.html"><i class="fa fa-heart-pulse" style="font-size: 15px;"></i></i> <span></span>Service</a>
+  <a href="appointments.html"><i class="fa fa-calendar-plus" style="font-size: 15px;"></i> Appointment</a>
+  <a href="details.html"><i class="fa-solid fa-bars" style="font-size: 15px;"></i> Details</a>
+</div>
+
+
+
+<div>
+  <div class="top">
+    <h2>Cardiology</h2>
+  </div>
+  <div class="bottom">
+    <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading">Dr.K.Archana MD., IDDCM
+          <div class="author"> 8AM - 12PM</div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading"> B.Shivam MD.
+          <div class="author"> 9AM - 2PM</div>
+      </div>
+  </div>  
+</div>
+</div>
+
+
+<div>
+  <div class="top">
+    <h2>Neurology</h2>
+  </div>
+  <div class="bottom">
+    <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading"> Dr.S.Sivaprakash MBBS
+          <div class="author"> 8AM-2PM</div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading"> Dr.k.Praveen MBBS
+          <div class="author">12AM - 3PM</div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<div>
+  <div class="top">
+    <h2>Dental</h2>
+  </div>
+  <div class="bottom">
+    <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading"> Dr.S.Nisha BDS
+          <div class="author">9AM - 1PM</div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading"> Dr.S.Reyeesa Praveen BDS
+          <div class="author"> 1PM - 5PM</div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<div>
+  <div class="top">
+    <h2>Plastic Surgery</h2>
+  </div>
+  <div class="bottom">
+    <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading">Dr.G.Periysamy MS., M.Ch(plastic)
+          <div class="author">8AM - 12PM</div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading"> Dr.K.Venket MS., 
+          <div class="author"> 1PM - 6PM</div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<div>
+  <div class="top">
+    <h2>ENT</h2>
+  </div>
+  <div class="bottom">
+    <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading"> Dr.Argnagiri MBBS., DLO
+          <div class="author">10AM - 2PM</div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading"> Dr.G.Usha MBBS.,
+          <div class="author">3PM - 7PM</div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<div>
+  <div class="top">
+    <h2>Dermatology</h2>
+  </div>
+  <div class="bottom">
+    <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading"> Dr.K.Sriram MBBS, MD
+          <div class="author"> 9AM - 2PM</div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading"> Dr.K.Kani MBBS, MD
+          <div class="author"> 2PM - 4PM</div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<div>
+  <div class="top">
+    <h2>Physiotherapy</h2>
+  </div>
+  <div class="bottom">
+    <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading"> Dr.H.Abdul Latheef MBBS., DPT
+          <div class="author"> 9AM - 12PM </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading">Dr.K.Rathish MBBS., DPT
+          <div class="author"> 8AM - 3PM</div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<div>
+  <div class="top">
+    <h2>General Surgery</h2>
+  </div>
+  <div class="bottom">
+    <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading">Dr.H.Kasavan MS., FMAAS., FIAGES., FMAS
+          <div class="author">7AM - 10AM</div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-image"><i class="fa-solid fa-user" style="font-size: 200px; color: rgb(124, 119, 119);"></i></div>
+      <div class="category" style="font-size:40px;"> ... </div>
+      <div class="heading"> Dr.S.Siva MS., FMAAS
+          <div class="author"> 10AM - 2PM</div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>

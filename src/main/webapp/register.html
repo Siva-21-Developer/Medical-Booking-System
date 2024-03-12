@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 17.5px;
+  }
+  
+  ::-webkit-scrollbar
+{
+width:10px;
+}
+
+::-wegkit-scrollbar-track
+{
+background:#333;
+}
+
+::-webkit-scrollbar-thumb
+{
+height: 50px;
+background: white;
+border-radius:30px;
+}
+  
+  
+body{
+    min-height: 100vh;
+    font-size: 16px;
+    text-decoration: none ;
+}
+#appointment {
+  background-color: white;
+    padding-top: 0px;
+    margin-top: -0px;
+  }
+
+  #appointment label {
+    color: #393939;
+    font-weight: 500;
+    font-weight: bold;
+  }
+
+.section-title
+{
+  padding: 20px;
+}
+span
+{
+  position: absolute;
+  width: 125px;
+  height: 3px;
+  border-radius: 10px;
+  background-color:rgb(243, 237, 237);
+  transform: translate(0%,25px);
+}
+
+  #appointment .form-control {
+    background: #f9f9f9;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none; 
+    margin-bottom: 15px;
+    transition: all ease-in-out 0.4s;
+  }
+
+  #appointment input,
+  #appointment select {
+    height: 45px;
+  }
+
+  #appointment button#cf-submit {
+    position: relative;
+    bottom: 20px;
+    background: #a5c422;
+    color: #ffffff;
+    font-weight: 600;
+    height: 55px;
+  }
+
+  #appointment button#cf-submit:hover {
+    background: #393939;
+    color: #ffffff;
+  }
+
+</style>
+    <title>Register Form </title> 
+</head>
+<body>
+    
+<div class="topnav">
+  <h2><i class="head1">SVS</i> Hospital</h2>
+  <a href="homes.html"><i class="fa fa-home" style="font-size: 15px;"></i> Home</a>
+  <a href="login.html"><i class="fa-solid fa-user" style="font-size: 15px;"></i> Patient Login</a>
+  <a href="register.html"><i class="fa-solid fa-user-plus" style="font-size: 15px;"></i> <span></span>Patient Register</a>
+  <a href="services.html"><i class="fa fa-heart-pulse" style="font-size: 15px;"></i> Service</a>
+  <a href="appointments.html"><i class="fa fa-calendar-plus" style="font-size: 15px;"></i> Appointment</a>
+  <a href="details.html"><i class="fa-solid fa-bars" style="font-size: 15px;"></i> Details</a>
+</div>
+
+<section id="appointment" >
+    <div class="container">
+         <div class="row">
+
+              <div class="col-md-6 col-sm-6">
+                   <img src="img/appointment-image.jpg" class="img-responsive" alt="" >
+              </div>
+
+              <div class="col-md-6 col-sm-6">
+                   <form id="appointment-form" role="form" method="post" action="pay.jsp" autocomplete="off">
+
+                       
+                        <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                             <h2> Register</h2>
+                        </div>
+
+                        <div>
+                             <div class="col-md-6 col-sm-6">
+                                  <label for="name">Name</label>
+                                  <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                             </div>
+
+                             <div class="col-md-6 col-sm-6">
+                                  <label for="email">Email</label>
+                                  <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                             </div>
+
+                             <div class="col-md-6 col-sm-6">
+                                  <label for="date">DOB</label>
+                                  <input type="date" name="date" value="" class="form-control" required>
+                             </div>
+
+                             <div class="col-md-6 col-sm-6">
+                                  <label for="select">Password</label>
+                                  <input type="password" placeholder="Password" name="password" value="" class="form-control" required>
+                                  
+                             </div>
+
+                             <div class="col-md-12 col-sm-12">
+                                  <label for="telephone">Phone Number</label>
+                                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+                                  <label for="Message">Address</label>
+                                  <textarea class="form-control" rows="5" id="message" name="address" placeholder="Address" required></textarea>
+                                  <br>
+                                  <button type="submit" class="form-control " id="cf-submit" name="submit">Submit Button</button>
+                             </div>
+                        </div>
+                  </form>
+              </div>
+
+         </div>
+    </div>
+</section>
+
+
+</body>
+</html>

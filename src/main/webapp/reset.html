@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+	body
+	{background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 24%, rgba(0,212,255,0.8519782913165266) 100%);	}
+           .login {
+              overflow: hidden;
+              padding: 40px 30px 30px 30px;
+              border-radius: 12px;
+			  background: #e0e0e0;
+              box-shadow: inset 5px 5px 6px #5a5a5a,
+            inset -5px -5px 6px #ffffff;position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 400px;
+              transform: translate(-50%, -50%);
+               
+           }
+            
+           .login > input {
+            font-family: "Asap", sans-serif;
+            display: block;
+            border-radius: 5px;
+            font-size: 16px;
+            background: white;
+            width: 100%;
+            border: 0;
+            padding: 10px 10px;
+            margin: 15px -10px;
+            outline:none;
+           }
+
+           .login > button {
+            font-family: "Asap", sans-serif;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            width: 80px;
+            border: 0;
+            margin-top: 10px;
+            margin-left: -5px;
+            border-radius: 5px;
+            transition: 300ms;
+           }
+
+           .login > button:hover {
+            background-color: black;
+            color:white;
+           }
+	h1
+	{
+	position:relative;
+	display:flex;
+	align-items :center;
+	justify-content :center;
+	top:70px;
+	}
+	
+
+</style>
+</head>
+<body>
+<h1>Reset Password</h1>
+    <form class="login" action="forget.jsp" method="post">
+        <input type="text" placeholder="Username" name="user">
+        <input type="text" placeholder="Mobile number" name="phone">
+        <input type="text" placeholder="Password" name="password">
+        <button>Submit</button>
+    </form>
+
+
+</body>
+</html>

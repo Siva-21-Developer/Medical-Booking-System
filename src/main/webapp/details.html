@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Details Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 17.5px;
+}
+
+span
+{
+  position: absolute;
+  width: 55px;
+  height: 3px;
+  border-radius: 10px;
+  background-color:rgb(250, 242, 242);
+  transform: translate(0%,26px);
+}
+
+.container
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index :-4;
+}
+
+.container .card
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 700px;
+  height: 100%;
+  top: -50px;
+  left:50%;
+
+}
+
+.container .card h3
+{
+  position: relative;
+    font-size: 30px;
+    padding:20px;
+    left:30px;
+}
+
+.container img
+{
+  position: relative;
+  left: -15px;
+}
+
+  .submit
+{
+  position: relative;
+  width: 100px;
+  left: 50px;
+  margin:10px;
+  border: none;
+  border-radius:5px;
+  box-shadow:1px 2px 1px 1px;
+}
+
+ .submit:hover
+{
+transition:1s;
+background-color: black;
+color:white;
+}
+
+.form-control
+{
+ position:relative;
+ left:50px;
+  margin:10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav" >
+  <h2><i class="head1">SVS</i> Hospital</h2>
+  <a href="homes.html"><i class="fa fa-home" style="font-size: 15px;"></i> Home</a>
+  <a href="login.html"><i class="fa-solid fa-user" style="font-size: 15px;"></i> Patient Login</a>
+  <a href="register.html"><i class="fa-solid fa-user-plus" style="font-size: 15px;"></i> Patient Register</a>
+  <a href="services.html"><i class="fa fa-heart-pulse" style="font-size: 15px;"></i> Service</a>
+  <a href="appointments.html"><i class="fa fa-calendar-plus" style="font-size: 15px;"></i> Appointment</a>
+  <a href="details.html"><i class="fa-solid fa-bars" style="font-size: 15px;"></i> <span></span>Details</a>
+</div>
+
+<div class="container">
+<img src="img/slider1.jpg" alt="slid" width="660px" height="100%">
+<div class="card"> 
+<form action="detail.jsp" method="post" autocomplete="off">
+  <h3>Enter your mobile number<br> for details</h3>
+  <input type="text" name="phone" placeholder="Enter The Phone Number" class="form-control" required>
+  <input type="submit" value="Submit" class="submit">
+  </form>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/all.min.css">
+<script type="text/javascript">
+
+//window.onload = function () {
+//alert("If you are visit our website first time, you must register first");
+//};
+
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+
+</script>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 17.5px;
+}
+
+::-webkit-scrollbar
+{
+width:10px;
+}
+
+::-wegkit-scrollbar-track
+{
+background:#333;
+}
+
+::-webkit-scrollbar-thumb
+{
+height: 50px;
+background: black;
+border-radius:30px;
+}
+
+
+body
+{
+  background-color: white;
+}
+
+.container
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  height:  650px;
+  color: black;
+  left: 10;
+}
+
+.container .log
+{
+  position: relative;
+  width: 400px;
+  height:  100%;
+  background-color: rgb(255, 255, 255);
+  display: block;
+}
+
+.log h1
+{
+  position: relative;
+  color: white;
+  left: 20px;
+  color: black;
+  padding: 20px;
+}
+
+.log input
+{
+
+  width: 80%;
+  padding: 10px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  outline:  rgb(45, 202, 241);
+  font-size: 15px;
+  margin: 35px 35px;
+}
+
+.log label a
+{
+  position: relative;
+  text-decoration: none;
+  color: blue;
+  margin: 15px 0px;
+}
+
+.log label a:hover
+{
+  color: blue;
+}
+
+.log label a:active
+{
+  color: blue;
+}
+
+.log2
+{
+ position: absolute;
+ width: 700px;
+ height:  650px;
+ right:0;
+}
+
+
+span
+{
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  border-radius: 10px;
+  background-color:rgb(245, 239, 239);
+  transform: translate(0%,25px);
+}
+
+.shown
+{
+position:relative;
+display:flex;
+text-align:center;
+align-items:center;
+justify-content:center;
+width: 300px;
+font-size:12px;
+height:20px;
+}
+
+.show
+{
+position: absolute;
+left:-100px;
+}
+
+.shown label
+{
+position:absolute;
+left: 80px;
+top: -1px;
+font-size: 15px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav" style="font-size: 16.5px;">
+  <h2><i class="head1">SVS</i> Hospital</h2>
+  <a href="homes.html"><i class="fa fa-home" style="font-size: 15px;"></i> Home</a>
+  <a href="login.html"><i class="fa-solid fa-user" style="font-size: 15px;"></i> <span></span>Patient Login</a>
+  <a href="register.html"><i class="fa-solid fa-user-plus" style="font-size: 15px;"></i> Patient Register</a>
+  <a href="services.html"><i class="fa fa-heart-pulse" style="font-size: 15px;"></i> Service</a>
+  <a href="appointments.html"><i class="fa fa-calendar-plus" style="font-size: 15px;"></i> Appointment</a>
+  <a href="details.html"><i class="fa-solid fa-bars" style="font-size: 15px;"></i> Details</a>
+
+</div>
+
+<div class="container">
+<div class="log">
+  <form action="login.jsp" method="post" autocomplete="off">
+  <h1>Login</h1>
+  <input type="text" placeholder="UserName" name="user" class="form-control input-md" required> 
+  <input type="password" placeholder="Password" name="password" id="password" class="form-control input-md" required> 
+<div class="shown">
+  <input type="checkbox" onclick="myFunction()" class=" show"><label>Show Password</label> 
+  </div>
+  <input type="submit" name="submit" class="new-btn-d br-2 btn-primary" style=" padding: 10px; border: none; border-radius: 10px; cursor: pointer; text-align: center;" value="Login">
+  <div class="sf">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><a href="register.html">sign in</a></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><a href="reset.html">forget password?</a></label></div>
+</form>
+</div>
+</div>
+<div class="log2"> 
+<img src="img/team-image1.jpg" alt="Hospital" width="550px" height="650px">
+</div>
+</body>
+</html>

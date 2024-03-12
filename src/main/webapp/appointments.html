@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Appointment Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/all.min.css">
+<script>  
+
+function favTutorial() {  
+var mylist = document.getElementById("myList").value;  
+
+if(mylist == "Cardiology")
+{
+  var data ="Doctor<br><select id = 'myList' name='doctors' class='form-control' required>  <option value=''> ---Choose Doctor--- </option><option value='Dr.K.Archana'> Dr.K.Archana </option><option value='Dr.B.Shivam'>Dr.B.Shivam </option></select>"
+  document.getElementById("doctor").innerHTML=data;
+}
+
+else if(mylist == "Neurology")
+{
+  var data ="Doctor<br><select id = 'myList' name='doctors' class='form-control' required>  <option value=''> ---Choose Doctor--- </option><option value='Dr.s.Sivaprakash'>Dr.s.Sivaprakash</option><option value='Dr.K.Praveen'>Dr.K.Praveen </option></select>"
+      document.getElementById("doctor").innerHTML=data;	
+	}
+else if(mylist == "Dental")
+{
+  var data ="Doctor<br><select id = 'myList' name='doctors' class='form-control' required>  <option value=''> ---Choose Doctor--- </option><option value='Dr.S.Nisha'> Dr.S.Nisha </option><option value='Dr.S.Reyeesa Praveen'>Dr.S.Reyeesa Praveen </option></select>"
+	  document.getElementById("doctor").innerHTML=data;	
+}
+else if(mylist == "Plastic Surgery")
+{
+  var data ="Doctor<br><select id = 'myList' name='doctors' class='form-control' required>  <option value=''> ---Choose Doctor--- </option><option value='Dr.G.Periysamy'> Dr.G.Periysamy </option><option value='Dr.K.Venkat'>Dr.K.Venkat</option></select>"
+	  document.getElementById("doctor").innerHTML=data;	
+}
+else if(mylist == "ENT")
+{
+  var data ="Doctor<br><select id = 'myList' name='doctors' class='form-control' required>  <option value=''> ---Choose Doctor--- </option><option value='Dr.Argnagiri'> Dr.Argnagiri </option><option value='Dr.S.Usha'>Dr.S.Usha </option></select>"
+	  document.getElementById("doctor").innerHTML=data;	
+}
+else if(mylist == "Dermatology")
+{
+  var data ="Doctor<br><select id = 'myList' name='doctors' class='form-control' required>  <option value=''> ---Choose Doctor--- </option><option value='Dr.K.Sriram'> Dr.K.Sriram </option><option value='Dr.K.kani'>Dr.K.kani</option></select>"
+	  document.getElementById("doctor").innerHTML=data;	
+}
+else if(mylist == "Physiotherapy")
+{
+  var data ="Doctor<br><select id = 'myList' name='doctors' class='form-control' required>  <option value=''> ---Choose Doctor--- </option><option value='Dr.H.Abdul Latheef'> Dr.H.Abdul Latheef </option><option value='Dr.K.Rathish'>Dr.K.Rathish</option></select>"
+	  document.getElementById("doctor").innerHTML=data;	
+}
+else if(mylist == "General Surgery")
+{
+  var data ="Doctor<br><select id = 'myList' name='doctors' class='form-control' required>  <option value=''> ---Choose Doctor--- </option><option value='Dr.H.Kasavan'> Dr.H.Kasavan </option><option value='Dr.S.Siva'>Dr.S.Siva</option></select>"
+	  document.getElementById("doctor").innerHTML=data;	
+}
+}
+
+</script>  
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 17.5px;
+}
+
+::-webkit-scrollbar
+{
+width:10px;
+}
+
+::-wegkit-scrollbar-track
+{
+background:#333;
+}
+
+::-webkit-scrollbar-thumb
+{
+height: 50px;
+background: white;
+border-radius:30px;
+}
+
+
+body
+{
+  background-size: 150%;
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+span
+{
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  border-radius: 10px;
+  background-color:rgb(245, 239, 239);
+  transform: translate(0%,25px);
+}
+
+.appointment-main
+{
+    margin-top: 70px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <h2><i class="head1">SVS</i> Hospital</h2>
+  <a href="homes.html"><i class="fa fa-home" style="font-size: 15px;"></i> Home</a>
+  <a href="login.html"><i class="fa-solid fa-user" style="font-size: 15px;"></i> Patient Login</a>
+  <a href="register.html"><i class="fa-solid fa-user-plus" style="font-size: 15px;"></i> Patient Register</a>
+  <a href="services.html"><i class="fa fa-heart-pulse" style="font-size: 15px;"></i> Service</a>
+  <a href="appointments.html"><i class="fa fa-calendar-plus" style="font-size: 15px;"></i> <span></span>Appointment</a>
+  <a href="details.html"><i class="fa-solid fa-bars" style="font-size: 15px;"></i> Details</a>
+</div>
+	<!-- Start Appointment -->
+	<div  class="appointment-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="well-block">
+                        <div class="well-title">
+                            <h2>Book an Appointment</h2>
+                        </div>
+                        <br>
+                        <form action="payments.jsp" method="post" autocomplete="off">
+                            <!-- Form start -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="name">Name</label>
+                                        <input  name="name" type="text" placeholder="Name" class="form-control input-md" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="name">Card Number</label>
+                                        <input  name="card" type="text" placeholder="Card Number" class="form-control input-md" required>
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="mobile">Mobile</label>
+                                        <input  name="mobile" type="text" placeholder="Mobile" class="form-control input-md" required>
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="date">Preferred Date</label>
+                                        <input  name="date" type="date" placeholder="Preferred Date" class="form-control input-md" required>
+                                    </div>
+                                </div>
+
+                                <!-- Select Basic -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="time">Preferred Time</label>
+                                        <input  name="time" class="form-control" type="time" required>
+                                        
+                                    </div>
+                                </div>
+                                <!-- Select Basic -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="appointmentfor">Department</label>
+                                        <select  name="appointmentfor" class="form-control" required id ="myList" onchange = "favTutorial()">
+                                            <option value="s">Choose Department</option>
+											<option value="Cardiology">Cardiology</option>
+											<option value="Neurology">Neurology</option>
+											<option value="Dental">Dental</option>
+											<option value="Plastic Surgery">Plastic Surgery</option>
+											<option value="ENT">ENT</option>
+											<option value="Dermatology">Dermatology</option>
+											<option value="Physiotherapy">Physiotherapy</option>
+											<option value="General Surgery">General Surgery</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12"id="doctor">
+                                    <div class="form-group">
+                                        <label class="control-label" for="appointmentfor">Doctor</label>
+                                    </div>
+                                </div>                                                          
+                                <br>      
+                                <!-- Button -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" name="singlebutton" class="new-btn-d br-2 btn-primary" style=" padding: 10px; border: none; margin-top:10px; border-radius: 10px; cursor: pointer; text-align: center;" value="Make An Appointment">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- form end -->
+                    </div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="well-block">
+                        <div class="well-title">
+                            <h2>Why Appointment with Us</h2>
+                        </div>
+                        <br>
+                        <div class="feature-block">
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title" >24/7 Hours Available <i class="fa-solid fa-clock"></i></h4>
+                                <div class="feature-content">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Experienced Staff Available <i class="fas fa-user-md"></i></h4>
+                                <div class="feature-content">
+                                    <p> </p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Low Price & Fees <i class="fa-solid fa-rupee-sign"></i></h4>
+                                <div class="feature-content">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
